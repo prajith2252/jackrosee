@@ -110,7 +110,7 @@ if DATABASE_URL:
         del qbit_opt['_id']
         qbit_options = qbit_opt
     conn.close()
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '2085781818:AAGFObqm-i8J522vc_wpAzFi4no2cbECues')
     bot_id = int(BOT_TOKEN.split(':', 1)[0])
     DATABASE_URL = environ.get('DATABASE_URL', '')
 else:
