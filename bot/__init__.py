@@ -78,7 +78,7 @@ if ospath.exists('pyrogram.session'):
 if ospath.exists('pyrogram.session-journal'):
     osremove('pyrogram.session-journal')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '2085781818:AAGFObqm-i8J522vc_wpAzFi4no2cbECues')
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
