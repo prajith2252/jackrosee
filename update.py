@@ -56,7 +56,7 @@ UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
     UPSTREAM_BRANCH = 'master'
 
-"""if UPSTREAM_REPO is not None:
+if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
         srun(["rm", "-rf", ".git"])
 
@@ -73,4 +73,4 @@ if len(UPSTREAM_BRANCH) == 0:
     if update.returncode == 0:
         log_info(f'Successfully updated with latest commit from {UPSTREAM_REPO_URL}')
     else:
-        log_error(f'Something went wrong while updating, check {UPSTREAM_REPO_URL} if valid or not!')"""
+        log_error(f'Something went wrong while updating, check {UPSTREAM_REPO_URL} if valid or not!')
