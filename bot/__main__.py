@@ -413,8 +413,8 @@ def main():
         except Exception as err:
             LOGGER.info(f"Pixabay API Error: {err}")
 
-    #if config_dict['SET_BOT_COMMANDS']:
-        #bot.set_my_commands(botcmds)
+    if config_dict['SET_BOT_COMMANDS']:
+        bot.set_my_commands(botcmds)
     start_cleanup()
     date = now.strftime('%d/%m/%y')
     time = now.strftime('%I:%M:%S %p')
